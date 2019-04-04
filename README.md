@@ -1,4 +1,6 @@
-#This Project Was Created for Learning of Angular 7 by Aman Pasi 
+# This Project Was Created by Aman Pasi
+Hi! This My First learning project on Angular 7
+This repo does not contain anything Special because this is just created for learning.
 
 # HelloWorld
 
