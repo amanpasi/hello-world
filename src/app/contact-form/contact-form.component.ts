@@ -12,6 +12,13 @@ export class ContactFormComponent implements OnInit {
   submit(f){
     console.log(f);
   }
+
+  contactMethods = [
+    { id:1 , name:'Email' },
+    { id:2 , name:'Name' },
+    { id:3 , name:'Address' }
+  ];
+
   constructor() { }
 
   ngOnInit() {
