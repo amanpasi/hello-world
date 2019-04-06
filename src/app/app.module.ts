@@ -1,5 +1,4 @@
 import { SignupFormComponent } from './signup-form/signup-form.component';
-import { FavoriteComponent } from './favorite.component';
 import { CoursesService } from './courses.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -11,6 +10,7 @@ import { CoursesComponent } from './courses.component';
 import { CourseComponent } from './course/course.component';
 import { SummaryPipe } from './summary.pipe';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     CoursesComponent,
     CourseComponent,
     SummaryPipe,
-    ContactFormComponent
+    ContactFormComponent,
+    NewCourseFormComponent
   ],
   imports: [
     BrowserModule,
