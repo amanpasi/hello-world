@@ -1,4 +1,18 @@
-<form>
+<form [formGroup]="form">
+  <input formControlName="name" />
+  <div formControlName="contact">
+      <input formControlName="email" />
+      <input formControlName="phone" />  
+  </div>
+  <ul>
+    <li *ngFor="let topic of topics.controls">
+      {{ topic.value }}
+    </li>
+  </ul>
+</form>
+
+
+<!-- <form>
   <input 
     type="text" 
     class="form-control"
@@ -11,4 +25,4 @@
       {{ topic.value }}
     </li>
   </ul>
-</form>
+</form> -->
