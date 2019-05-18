@@ -22,6 +22,7 @@ export class PostService {
   }
 
   deletePost(id){
+    //return this.http.delete('https://books.google.at/books?id=szdvzdb');
     return this.http.delete(this.url +'/'+ id);
   }
 
