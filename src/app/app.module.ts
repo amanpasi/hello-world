@@ -1,3 +1,4 @@
+
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { CoursesService } from './courses.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -11,6 +12,9 @@ import { CourseComponent } from './course/course.component';
 import { SummaryPipe } from './summary.pipe';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
+import { PostsComponent } from './posts/posts.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -20,15 +24,18 @@ import { NewCourseFormComponent } from './new-course-form/new-course-form.compon
     CourseComponent,
     SummaryPipe,
     ContactFormComponent,
-    NewCourseFormComponent
+    NewCourseFormComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
+    HttpClientModule,
     CoursesService
   ],
   bootstrap: [AppComponent]
